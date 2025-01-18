@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+/* color var */
+:root {
+  --light-blue: #deebff;
+  --dark-blue: #0065fc;
+  --grey-color: #f2f2f2;
+  --gey-star: #d9d9d9;
+  --link: #606060;
+}
+/* barre de navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+header img {
+  margin-left: 50px;
+  margin-top: 30px;
+  max-height: 45px;
+}
+nav ul {
+  display: flex;
+  margin-right: 10px;
+}
+ul li,
+a {
+  text-decoration: none;
+  list-style: none;
+  background: white;
+  padding: 15px;
+  padding-top: 35px;
+  font-family: century gothic;
+  color: var(--link);
+  font-size: 16px;
+}
+ul li:hover,
+:focus {
+  border-top: 3px solid var(--dark-blue);
+  transition: ease 0.1s;
+}
+ul li a:hover,
+:focus {
+  color: var(--dark-blue);
+  transition: ease 0.3s;
+}
+/* Section de filtre */
+.__findHebergement {
+  display: flex;
+  flex-direction: column;
+  font-family: century gothic;
+}
+.__findText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 36px;
+  line-height: 2em;
+}
+.__searchBar {
+  height: auto;
+  padding: 10px;
+  margin-left: 50px;
+  /* background-color: var(--link); */
+}
+#inputSearch {
+  outline: none;
+  border: 1px solid var(--grey-color);
+  color: black;
+  padding-left: 5px;
+  font-weight: bold;
+  font-family: century gothic;
+  font-size: medium;
+  padding: 10px;
+}
+.__searchBar .containSearchBar {
+  display: flex;
+}
+/* reponsive */
+@media screen and (max-width: 563px) {
+  * {
+    border: none;
+  }
+  header {
+    margin: none;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+  }
+  header img {
+    position: relative;
+    margin-left: 40%;
+    margin-top: none;
+    margin-bottom: 20px;
+    max-width: 100px;
+    padding: none;
+  }
+  nav ul {
+    width: 100vw;
+    display: flex;
+    margin: none;
+    justify-content: center;
+    justify-items: stretch;
+  }
+  nav ul li {
+    width: 100%;
+    margin: none;
+    text-align: center;
+    border-bottom: 3px solid var(--grey-color);
+  }
+  nav ul li:hover,
+  :focus {
+    border: none;
+    border-bottom: 3px solid var(--dark-blue);
+    transition: ease 0.3s;
+  }
+  nav ul li a {
+    border: none;
+  }
+
+  /* findText responsive */
+  .__findText {
+    margin-left: 20px;
+    font-size: smaller;
+  }
+  .__searchBar {
+    margin-left: 20px;
+  }
+}
