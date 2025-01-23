@@ -175,13 +175,38 @@ ul li a:hover,
   display: flex;
   flex-direction: row;
   margin-left: 50px;
+  margin-top: 30px;
 }
 .viewHebergementMarseille{
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(2, auto);
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background: var(--grey-color);
+  border-radius: 20px;
+  
+}
+.viewHebergementMarseille h3{
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: century gothic;
+}
+.viewCard{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, auto);
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.cardHebergement {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /* reponsive */
 @media screen and (max-width: 915px) {
